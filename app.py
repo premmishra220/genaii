@@ -1056,9 +1056,12 @@ for msg in conversation[-50:]:
 # -----------------------------
 # Footer
 # -----------------------------
-st.markdown("<hr>", unsafe_allow_html=True)
-st.markdown("""
-<div style="text-align:center; color:#9aaed8; font-size:13px; margin-top:8px;">
-Made with care by <strong>Prem Prakash Mishra</strong>
+st.markdown(f"""
+<div style="display:flex; align-items:center; justify-content:flex-start; flex-direction:column;">
+  <div class="header-title">Generative AI App</div>
+  <div class="header-sub">Made by <strong>Prem Prakash Mishra</strong></div>
 </div>
+<hr>
 """, unsafe_allow_html=True)
+
+
