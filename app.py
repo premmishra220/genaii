@@ -249,7 +249,8 @@ for msg in conversation[-50:]:
         """, unsafe_allow_html=True)
     else:
         st.markdown(f"""
-        <div class="ai-bubble">{st.experimental_escape(msg.get('message',''))}</div>
+      <div class="ai-bubble">{msg.get('message','')}</div>
+
         <div class="clear"></div>
         """, unsafe_allow_html=True)
 
@@ -260,5 +261,6 @@ st.markdown("""
 Made with care by <strong>Prem Prakash Mishra</strong>
 </div>
 """, unsafe_allow_html=True)
+
 
 
