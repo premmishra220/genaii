@@ -241,7 +241,8 @@ for msg in conversation[-50:]:
         <div class="user-bubble">
           <div style="display:flex; align-items:center;">
             <div class="avatar"></div>
-            <div style="display:inline-block; vertical-align:middle;">{st.experimental_escape(msg.get('message',''))}</div>
+           <div style="display:inline-block; vertical-align:middle;">{msg.get('message','')}</div>
+
           </div>
         </div>
         <div class="clear"></div>
@@ -259,4 +260,5 @@ st.markdown("""
 Made with care by <strong>Prem Prakash Mishra</strong>
 </div>
 """, unsafe_allow_html=True)
+
 
