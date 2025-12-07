@@ -1,4 +1,5 @@
 # app.py
+import html
 import streamlit as st
 import json
 import hashlib
@@ -244,7 +245,7 @@ for msg in conversation[-50:]:
         <div class="user-bubble">
           <div style="display:flex; align-items:center;">
             <div class="avatar"></div>
-            <div style="display:inline-block; vertical-align:middle;">{st.experimental_escape(msg.get('message',''))}</div>
+            <div style="display:inline-block; vertical-align:middle;">{html.escape(msg.get('message',''))}</div>
           </div>
         </div>
         <div class="clear"></div>
@@ -1063,5 +1064,6 @@ st.markdown(f"""
 </div>
 <hr>
 """, unsafe_allow_html=True)
+
 
 
