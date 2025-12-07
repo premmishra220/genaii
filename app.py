@@ -40,7 +40,7 @@ def add_message(email, chat_name, role, message):
     save_users(users)
 
 
-st.set_page_config(page_title="Generative AI App", page_icon=None, layout="wide")
+st.set_page_config(page_title="Generative AI App made by Prem Mishra", page_icon=None, layout="wide")
 st.markdown("""
 <style>
 body {background-color:#0f111a; color:#f0f0f5; font-family:'Segoe UI', sans-serif;}
@@ -180,3 +180,4 @@ for msg in conversation[-20:]:
         <div class="ai-bubble">{msg.get('message','')}</div>
         <div class="clear"></div>
         """, unsafe_allow_html=True)
+
