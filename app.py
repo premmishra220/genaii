@@ -1,3 +1,4 @@
+import html
 import streamlit as st
 import json
 import hashlib
@@ -258,3 +259,4 @@ st.markdown("""
 Made with care by <strong>Prem Prakash Mishra</strong>
 </div>
 """, unsafe_allow_html=True)
+
